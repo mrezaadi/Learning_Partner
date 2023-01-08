@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.main_menu">
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_toLeftOf="@+id/chat"
+            app:cardCornerRadius="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_green">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cari materi disini ...">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bot">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoInputVideo"
+            android:src="@drawable/white_video"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoInputVideo"
+            android:src="@drawable/white_ass"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoPlaylist"
+            android:src="@drawable/white_playlist"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

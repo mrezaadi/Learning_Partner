@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login_menu"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="580dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/uploadsoal"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Upload"
+        android:textColorHint="@color/white" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="350dp"
+        android:onClick="gotoMenu"
+        app:srcCompat="@drawable/back"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/idSoal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="ID Soal"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+    <EditText
+        android:id="@+id/mataPelajaranSoal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Mata Pelajaran"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/materiSoal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Materi"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/kelasSoal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Kelas"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/soal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Soal"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck"></EditText>
+
+    <EditText
+        android:id="@+id/optionA"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Option A"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck"></EditText>
+
+    <EditText
+        android:id="@+id/optionB"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Option B"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/optionC"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Option C"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/optionD"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Option D"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/pembahasan"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Pembahasan"
+        android:fontFamily="@font/poppins_regular"
+        tools:ignore="TouchTargetSizeCheck" >
+    </EditText>
+
+
+</RelativeLayout>

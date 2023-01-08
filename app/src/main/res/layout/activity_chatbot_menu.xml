@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.chatbot_menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="359dp"
+            android:onClick="gotoMenu"
+            app:srcCompat="@drawable/white_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_foreground">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="26dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:text="ChatBot (ID : 12345678)">
+
+        </TextView>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/pesan"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Masukkan pesan ..."
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </EditText>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/send"></ImageView>
+
+
+</RelativeLayout>

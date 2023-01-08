@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308574430465",
+    "project_id": "loginfirebase-af276",
+    "storage_bucket": "loginfirebase-af276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308574430465:android:692685151da6fe74cee700",
+        "android_client_info": {
+          "package_name": "com.example.learningpartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308574430465-288v98hqn48at8phhrk0fvldta4ff68j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4fmSxRcPYQuLQUJg0_8yOKS3sLeiHE_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308574430465-288v98hqn48at8phhrk0fvldta4ff68j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

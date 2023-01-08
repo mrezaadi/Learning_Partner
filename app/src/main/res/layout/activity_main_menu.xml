@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.main_menu"
+    >
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_toLeftOf="@+id/chat"
+            app:cardCornerRadius="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/search_green">
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="278dp"
+                    android:layout_height="match_parent"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></EditText>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:onClick="gotoChatbot"
+            android:src="@drawable/bot"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"></ImageView>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pilihan video">
+
+    </TextView>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="gotoVideoPlayer"
+                    android:src="@drawable/video_1"
+                    tools:ignore="SpeakableTextPresentCheck"></ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_2">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mate Pelajaran : X\nMateri : Y\nKelas : Z">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_3">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_4">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Soal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
+    </TextView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="gotoQuizPlayer"
+                    android:src="@drawable/video_1"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_2">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_3">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/video_4">
+                </ImageView>
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Pelajaran : X\nMateri : Y\nKelas : Z">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoInputVideo"
+            android:src="@drawable/white_video"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoInputSoal"
+            android:src="@drawable/white_ass"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="gotoPlaylist"
+            android:src="@drawable/white_playlist"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+</LinearLayout>
