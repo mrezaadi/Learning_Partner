@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class register_menu extends AppCompatActivity {
     TextView log;
     EditText inputEmail, pass1, pass2;
-    String email, password1, password2;
+    private String email, password1, password2;
     Button btnDaftar;
     FirebaseAuth mAuth;
 
